@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div {
+  border: 1px dashed rgb(24, 224, 170);
+}
+
+.body-container {
+  background-image:;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: hidden;
+  color: white;'
+  background-size: contain;
+}
+
+.articles {
+  width: 100%;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.float-left {
+ width: 30%;
+ float: left;
+}
+
+.mobile .article-text {
+  float: left;
+  width: 70%;
+}
+
+.advertising .article-text {
+  width: 70%;
+  float: left;
+}
+
+.article-text {
+  padding: 1% 5% 1% 5%;
+}
+
+.holiday {
+  background-color: rgb(38, 50, 56);
+  width: 90%;
+  margin: 50% 0 5% 5%;
+  padding: 1% 5%;
+}
+.advertising {
+  background-color: rgb(0, 150, 136);
+  overflow: hidden;
+}
+
+.mobile {
+  overflow: hidden;
+  background-color: rgb(13, 71, 161);
+}
+
+@media (min-width: 600px){
+  .mobile {
+    width: 50%;
+    float: left;
+  }
+  .advertising {
+    width: 50%;
+    float: left;
+  }
+
+  .mobile img {
+    float: none;
+    width: 100%;
+  }
+
+  .mobile .article-text {
+    width: 100%;
+  }
+
+  .advertising img {
+    float: none;
+    width: 100%;
+  }
+
+  .advertising .article-text {
+    width: 100%;
+  }
+
+
+  .holiday {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 1000px){
+  .mobile {
+    width: 33%;
+  }
+  .advertising {
+    width: 33%;
+  }
+  .articles {
+    float: right;
+    height: 100%;
+  }
+}
