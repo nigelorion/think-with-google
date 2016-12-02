@@ -5,9 +5,9 @@ html {
   box-sizing: inherit;
 }
 
-div {
+/*div {
   border: 1px dashed rgb(24, 224, 170);
-}
+}*/
 
 .body-container {
   background-image:;
@@ -16,19 +16,83 @@ div {
   overflow: hidden;
   color: white;'
   background-size: contain;
+  min-width: 400px;
+}
+
+.content {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  max-height: 1215px;
+
+  overflow: hidden;
 }
 
 .articles {
   width: 100%;
 }
 
+#search {
+  width: 25px;
+}
+
 .logo img {
   width: 200px;
 }
 
-.float-left {
- width: 30%;
- float: left;
+.logo {
+  color: rgb(135, 135, 135);
+}
+
+.logo p {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: none;
+
+
+}
+.logo ul {
+  display: flex;
+  list-style: none;
+  display: block;
+  top: 0;
+  right: 0;
+  margin: 0;
+  position: absolute;
+  display: none;
+}
+.logo ul li {
+  display: inline-block;
+  margin: 5px;
+
+}
+.mobile {
+  overflow: hidden;
+  background-color: rgb(13, 71, 161);
+  min-height: 120px;
+}
+
+/*.float-left {
+  width: 30%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.float-left img {
+  position: relative;
+  top: 0;
+  left: 0;
+}*/
+
+
+
+
+
+
+.float-left img{
+  width: 30%;
+  float: left;
 }
 
 .mobile .article-text {
@@ -49,17 +113,15 @@ div {
   background-color: rgb(38, 50, 56);
   width: 90%;
   margin: 50% 0 5% 5%;
-  padding: 1% 5%;
+  padding: 5px 5px 5px 5px;
 }
 .advertising {
   background-color: rgb(0, 150, 136);
   overflow: hidden;
+  min-height: 120px;
 }
 
-.mobile {
-  overflow: hidden;
-  background-color: rgb(13, 71, 161);
-}
+
 
 @media (min-width: 600px){
   .mobile {
@@ -89,21 +151,42 @@ div {
     width: 100%;
   }
 
-
   .holiday {
-    max-width: 280px;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 33%;
   }
 }
 
 @media (min-width: 1000px){
   .mobile {
-    width: 33%;
+    width: 100%;
+    height: 50%;
   }
+
   .advertising {
-    width: 33%;
+    width: 100%;
+    height: 50%;
   }
   .articles {
-    float: right;
     height: 100%;
+  }
+
+  .right-col {
+    width: 33%;
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .logo ul, .logo p {
+    display: block;
   }
 }
